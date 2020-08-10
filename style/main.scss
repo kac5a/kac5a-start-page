@@ -1,0 +1,142 @@
+$primary: #486583;
+$primary-light: #333639;
+$primary-active: #34373a;
+$shadow: rgba(0, 0, 0, 0.5);
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: $primary;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 110vh;
+  width: 110vw;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+.weekLineContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2px;
+  margin: 10px 0 20px 0;
+
+  .weekLineDay {
+    display: flex;
+    width: 80px;
+    height: 100%;
+    background-color: #fff;
+    margin: 2px;
+  }
+
+  .weekend {
+    background-color: rgb(255, 187, 231);
+  }
+
+  .timeSpent {
+    height: 100%;
+    background-color: rgb(255, 88, 116);
+  }
+}
+
+// form {
+//   width: 80%;
+//   margin: 40px;
+// }
+
+// input {
+//   height: 50px;
+//   width: 100%;
+//   background-color: $primary-light;
+//   border: none;
+//   padding: 0 20px;
+//   font-size: 20px;
+//   color: #5d7085;
+//   box-shadow: 4px 4px 12px $shadow, -4px -4px 12px $highlight;
+//   outline: none;
+//   transition: 0.2s all;
+
+//   &:hover {
+//     background-color: $primary-active;
+//   }
+
+//   &:focus {
+//     background-color: $primary-active;
+//   }
+
+//   &::placeholder {
+//     font-weight: bold;
+//     opacity: 0.4;
+//     color: #5d7085;
+//   }
+// }
+
+.time {
+  cursor: default;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  font-size: 80px;
+  margin-bottom: 10px;
+
+  .twdgt {
+    display: flex;
+    justify-content: center;
+    min-width: 110px;
+    margin: 0 20px;
+  }
+}
+.date {
+  cursor: default;
+  user-select: none;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#links {
+  cursor: default;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+
+  a {
+    width: 100px;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    img {
+      width: 100px;
+      max-height: 100px;
+      transition: 0.2s all;
+      filter: drop-shadow(4px 4px 6px $shadow) brightness(2);
+
+      &:hover {
+        filter: drop-shadow(4px 4px 6px $shadow) brightness(2.7);
+      }
+    }
+  }
+}

@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #486583;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 110vh;
+  width: 110vw;
+  z-index: -1;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+.weekLineContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2px;
+  margin: 10px 0 20px 0;
+}
+
+.weekLineContainer .weekLineDay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80px;
+  height: 100%;
+  background-color: #fff;
+  margin: 2px;
+}
+
+.weekLineContainer .weekend {
+  background-color: #ffbbe7;
+}
+
+.weekLineContainer .timeSpent {
+  height: 100%;
+  background-color: #ff5874;
+}
+
+.time {
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.time .twdgt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 110px;
+  margin: 0 20px;
+}
+
+.date {
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#links {
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+#links a {
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+#links a img {
+  width: 100px;
+  max-height: 100px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  -webkit-filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.5)) brightness(2);
+          filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.5)) brightness(2);
+}
+
+#links a img:hover {
+  -webkit-filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.5)) brightness(2.7);
+          filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.5)) brightness(2.7);
+}
+/*# sourceMappingURL=main.css.map */
